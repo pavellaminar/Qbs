@@ -1,7 +1,7 @@
 # Qbs
-Qbs Manual (RUS) cpp Module
+Qbs Manual (RUS) [cpp Module](https://doc.qt.io/qbs/qml-qbsmodules-cpp.html)
 cpp Module provides C/C++ support
 
-#Qbs
+# Qbs
 Руководство Qbs модуля cpp на русском языке
-cpp модуль предоставляет поддержку языка С/С++
+[cpp модуль](https://doc.qt.io/qbs/qml-qbsmodules-cpp.html) предоставляет поддержку языка С/С++
