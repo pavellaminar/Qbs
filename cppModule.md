@@ -322,3 +322,13 @@ Parameter | Type | Since | Default | Description
 По умолчанию: Определяется qbs setup-toolchains.
 
 ## compilerPath: string
+
+Полный путь до основного бинарного файла компилятора. Данное свойство задается в профиле сборки.
+
+Если набор инструментов разработки предоставляет различные компиляторы для разных языков используется [compilerPathByLanguage](#compilerpathbylanguage-var)
+
+По умолчанию: Определяется qbs setup-toolchains.
+
+## compilerPathByLanguage: var
+
+
