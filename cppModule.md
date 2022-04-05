@@ -1,3 +1,136 @@
+# Свойства
++ [architecture: string](#architecture-string)
++ [archiverName: string](#archivername-string)
++ [archiverPath: string](#archiverpath-string)
++ [assemblerFlags: stringList](#assemblerflags-stringlist)
++ [assemblerListingSuffix: string](#assemblerlistingsuffix-string)
++ [assemblerName: string](#assemblername-string)
++ [assemblerPath: string](#assemblerpath-string)
++ [automaticReferenceCounting: bool](#automaticreferencecounting-bool)
++ [cFlags: stringList](#cflags-stringlist)
++ [cLanguageVersion: stringList](#clanguageversion-stringlist)
++ [combineCSources: bool](#combinecsources-bool)
++ [combineCxxSources: bool](#combinecxxsources-bool)
++ [combineObjcSources: bool](#combineobjcsources-bool)
++ [сombineObjcxxSources: bool](#сombineobjcxxsources-bool)
++ [commonCompilerFlags: stringList](#commoncompilerflags-stringlist)
++ [compilerDefinesByLanguage: var](#compilerdefinesbylanguage-var)
++ [compilerFrameworkPaths: pathList](#compilerframeworkpaths-pathlist)
++ [compilerIncludePaths: pathList](#compilerincludepaths-pathlist)
++ [compilerLibraryPaths: pathList](#compilerlibrarypaths-pathlist)
++ [compilerListingSuffix: string](#compilerlistingsuffix-string)
++ [compilerName: string](#compilername-string)
++ [compilerPath: string](#compilerpath-string)
++ [compilerPathByLanguage: var](#compilerpathbylanguage-var)
++ [compilerVersion: string](#compilerversion-string)
++ [compilerVersionMajor: int](#compilerversionmajor-int)
++ [compilerVersionMinor: int](#compilerversionminor-int)
++ [compilerVersionPatch: int](#compilerversionpatch-int)
++ [compilerWrapper: stringList](#compilerwrapper-stringlist)
++ [cppFlags: stringList](#cppflags-stringlist)
++ [createSymlinks: bool](#createsymlinks-bool)
++ [cxxFlags: stringList](#cxxflags-stringlist)
++ [cxxLanguageVersion: stringList](#cxxlanguageversion-stringlist)
++ [cxxStandardLibrary: string](#cxxstandardlibrary-string)
++ [debugInfoBundleSuffix: string](#debuginfobundlesuffix-string)
++ [debugInfoSuffix: string](#debuginfosuffix-string)
++ [debugInformation: bool](#debuginformation-bool)
++ [defines: stringList](#defines-stringlist)
++ [discardUnusedData: bool](#discardunuseddata-bool)
++ [distributionFrameworkPaths: pathList](#distributionframeworkpaths-pathlist)
++ [distributionIncludePaths: pathList](#distributionincludepaths-pathlist)
++ [distributionLibraryPaths: pathList](#distributionlibrarypaths-pathlist)
++ [driverFlags: stringList](#driverflags-stringlist)
++ [driverLinkerFlags: stringList](#driverlinkerflags-stringlist)
++ [dsymutilFlags: stringList](#dsymutilflags-stringlist)
++ [dsymutilPath: string](#dsymutilpath-string)
++ [dynamicLibraries: stringList](#dynamiclibraries-stringlist)
++ [dynamicLibraryImportSuffix: string](#dynamiclibraryimportsuffix-string)
++ [dynamicLibraryPrefix: string](#dynamiclibraryprefix-string)
++ [dynamicLibrarySuffix: string](#dynamiclibrarysuffix-string)
++ [enableCompilerDefinesByLanguage: stringList](#enablecompilerdefinesbylanguage-stringlist)
++ [enableCxxLanguageMacro: string](#enablecxxlanguagemacro-string)
++ [enableExceptions: bool](#enableexceptions-bool)
++ [enableReproducibleBuilds: bool](#enablereproduciblebuilds-bool)
++ [enableRtti: bool](#enablertti-bool)
++ [enableSuspiciousLinkerFlagWarnings: bool](#enablesuspiciouslinkerflagwarnings-bool)
++ [endianness: string](#endianness-string)
++ [entryPoint: string](#entrypoint-string)
++ [exceptionHandlingModel: string](#exceptionhandlingmodel-string)
++ [executablePrefix: string](#executableprefix-string)
++ [executableSuffix: string](#executablesuffix-string)
++ [exportedSymbolsCheckMode: string](#exportedsymbolscheckmode-string)
++ [frameworkPaths: pathList](#frameworkpaths-pathlist)
++ [frameworks: stringList](#frameworks-stringlist)
++ [generateAssemblerListingFiles: bool](#generateassemblerlistingfiles-bool)
++ [generateCompilerListingFiles: bool](#generatecompilerlistingfiles-bool)
++ [generateLinkerMapFile: bool](#generatelinkermapfile-bool)
++ [generateManifestFile: bool](#generatemanifestfile-bool)
++ [includePaths: pathList](#includepaths-pathlist)
++ [libraryPaths: pathList](#librarypaths-pathlist)
++ [linkerFlags: stringList](#linkerflags-stringlist)
++ [linkerMapSuffix: string](#linkermapsuffix-string)
++ [linkerMode: string](#linkermode-string)
++ [linkerName: string](#linkername-string)
++ [linkerPath: string](#linkerpath-string)
++ [linkerVariant: string](#linkervariant-string)
++ [linkerWrapper: stringList](#linkerwrapper-stringlist)
++ [lipoPath: string](#lipopath-string)
++ [loadableModulePrefix: string](#loadablemoduleprefix-string)
++ [loadableModuleSuffix: string](#loadablemodulesuffix-string)
++ [minimumIosVersion: string](#minimumiosversion-string)
++ [minimumMacosVersion: string](#minimummacosversion-string)
++ [minimumTvosVersion: string](#minimumtvosversion-string)
++ [minimumWatchosVersion: string](#minimumwatchosversion-string)
++ [minimumWindowsVersion: string](#minimumwindowsversion-string)
++ [nmName: string](#nmname-string)
++ [nmPath: string](#nmpath-string)
++ [objcFlags: stringList](#objcflags-stringlist)
++ [objcopyName: string](#objcopyname-string)
++ [objcopyPath: string](#objcopypath-string)
++ [objcxxFlags: stringList](#objcxxflags-stringlist)
++ [objectSuffix: string](#objectsuffix-string)
++ [optimization: string](#optimization-string)
++ [platformDefines: stringList](#platformdefines-stringlist)
++ [positionIndependentCode: bool](#positionindependentcode-bool)
++ [prefixHeaders: pathList](#prefixheaders-pathlist)
++ [removeDuplicateLibraries: bool](#removeduplicatelibraries-bool)
++ [requireAppContainer: bool](#requireappcontainer-bool)
++ [requireAppExtensionSafeApi: bool](#requireappextensionsafeapi-bool)
++ [rpathLinkFlag: string](#rpathlinkflag-string)
++ [rpathOrigin: string](#rpathorigin-string)
++ [rpaths: stringList](#rpaths-stringlist)
++ [runtimeLibrary: string](#runtimelibrary-string)
++ [separateDebugInformation: bool](#separatedebuginformation-bool)
++ [soVersion: string](#soversion-string)
++ [sonamePrefix: string](#sonameprefix-string)
++ [staticLibraries: stringList](#staticlibraries-stringlist)
++ [staticLibraryPrefix: string](#staticlibraryprefix-string)
++ [staticLibrarySuffix: string](#staticlibrarysuffix-string)
++ [stripName: string](#stripname-string)
++ [stripPath: string](#strippath-string)
++ [systemFrameworkPaths: pathList](#systemframeworkpaths-pathlist)
++ [systemIncludePaths: pathList](#systemincludepaths-pathlist)
++ [systemRunPaths: stringList](#systemrunpaths-stringlist)
++ [toolchainInstallPath: string](#toolchaininstallpath-string)
++ [treatSystemHeadersAsDependencies: bool](#treatsystemheadersasdependencies-bool)
++ [treatWarningsAsErrors: bool](#treatwarningsaserrors-bool)
++ [useCPrecompiledHeader: bool](#usecprecompiledheader-bool)
++ [useCxxPrecompiledHeader: bool](#usecxxprecompiledheader-bool)
++ [useLanguageVersionFallback: bool](#uselanguageversionfallback-bool)
++ [useObjcPrecompiledHeader: bool](#useobjcprecompiledheader-bool)
++ [useObjcxxPrecompiledHeader: bool](#useobjcxxprecompiledheader-bool)
++ [useRPathLink: bool](#userpathlink-bool)
++ [useRPaths: bool](#userpaths-bool)
++ [variantSuffix: string](#variantsuffix-string)
++ [visibility: string](#visibility-string)
++ [warningLevel: string](#warninglevel-string)
++ [weakFrameworks: stringList](#weakframeworks-stringlist)
++ [windowsApiAdditionalPartitions: stringList](#windowsapiadditionalpartitions-stringlist)
++ [windowsApiCharacterSet: string](#windowsapicharacterset-string)
++ [windowsApiFamily: string](#windowsapifamily-string)
++ [windowsSdkVersion: string](#windowssdkversion-string)
+
 # Детальное описание
 
 **cpp** модуль содержит свойства и правила для инструменов разработки семейства С/С++. На платформе Apple он так же включает поддержку Objective-C/C++.
@@ -143,3 +276,49 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.0.1.
 
 ## compilerDefinesByLanguage: var
+
+# Need to translate
+
+## compilerFrameworkPaths: pathList
+
+Список путей поиска фреймворка, которые используются для всех проектов, использующих текущий набор инструментов разработки.
+
+Файлы пользовательских проектов обычно не задают это свойство.
+
+По умолчанию: Автоматическое определение путем проверки компилятора.
+
+Это свойство было введено в Qbs 1.6.
+
+## compilerIncludePaths: pathList
+
+Список путей поиска для #include которые используются во всех проектах данного набора инструментов разработки.
+
+Файлы пользовательских проектов обычно не задают это свойство.
+
+По умолчанию: Автоматическое определение путем проверки компилятора.
+
+Это свойство было введено в Qbs 1.6.
+
+## compilerLibraryPaths: pathList
+
+Список путей поиска библиотек, которые используются во всех проектах данного набора инструментов разработки.
+
+Файлы пользовательских проектов обычно не задают это свойство.
+
+По умолчанию: Автоматическое определение путем проверки компилятора.
+
+Это свойство было введено в Qbs 1.6.
+
+## compilerListingSuffix: string
+
+Строка добавляемая к сгенерированным файлам листинга.
+
+По умолчанию: toolchain зависимый, обычно значение ".lst"
+
+## compilerName: string
+
+Наименование заглавного скомпилированного бинарного файла. Данное свойство задается в профиле сборки.
+
+По умолчанию: Определяется qbs setup-toolchains.
+
+## compilerPath: string
