@@ -111,7 +111,7 @@ Parameter | Type | Since | Default | Description
 
 Это свойство было введено в Qbs 1.8.
 
-**Смотри так же** combineCSources (#combineCSources-bool)
+**Смотри так же** [combineCSources] (#combineCSources-bool)
 
 ## combineObjcxxSources: bool
 Аналогично combineCSources, но для Objective-C++. Реелвантные ярлыки для файла "objcpp" и "objcpp.combine".
