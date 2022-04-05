@@ -14,6 +14,7 @@ Parameter | Type | Since | Default | Description
 # Описание свойств
 
 ## allowUnresolvedSymbols: bool
+
 Установите в *истина* если вы хотите чтобы линкова прошла успешно даже в том случае, когда выходной бинарный файл содержит неразрешенные символы. Обычно это имеет мало смысла, но в некоторых случаях возможно, что необходимые символы будут доступны при загрузке, даже если они небыли изначально доступны при линковке.
 
 По умолчанию: Не определно
@@ -21,6 +22,7 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.2.
 
 ## alwaysUseLipo: bool
+
 Следует ли всегда использовать lipo при объединении выходных файлов Mach-O на платформах Apple, даже если имеется только одна архитектура ЦП. Обычно это значение не требует изменения.
 
 По умолчанию: ложь
@@ -28,6 +30,7 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.9.
 
 ## architecture: string
+
 Архитектура платформы назначения
 
 По умолчанию: qbs.architecture
@@ -40,6 +43,7 @@ Parameter | Type | Since | Default | Description
 По умолчанию: "ar"
 
 ## archiverPath: string
+
 Это свойство спицифично для Unix платформ.
 
 Полный путь до архиватора бинарных файлов. Это свойство устанавливается в профиле сборки.
@@ -54,11 +58,13 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.5.
 
 ## assemblerListingSuffix: string
+
 Строка добавляемая к сгенерированным файлам листинга.
 
 По умолчанию: toolchain зависимый, обычно значение ".lst"
 
 ## assemblerName: string
+
 Имя бинарного сборщика. Это свойство устанавливается в профиле сборки.
 
 По умолчанию: Определяется qbs setup-toolchains.
@@ -66,6 +72,7 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.5.
 
 ## assemblerPath: string
+
 Полный путь до сборщика бинарных файлов. Это свойство устанавливается в профиле сборки.
 
 По умолчанию: Определяется qbs setup-toolchains.
@@ -73,6 +80,7 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.5.
 
 ## automaticReferenceCounting: bool
+
 Это свойство спицифично для платформы Apple.
 
 Включить ли автоматический подсчет ссылок (ARC) для исходного кода Objective-C и Objective-C++.
@@ -84,11 +92,13 @@ Parameter | Type | Since | Default | Description
 Это свойство было введено в Qbs 1.4.
 
 ## cFlags: stringList
+
 Список дополнительных флагов для компилятора С
 
 По умолчанию: Не определено
 
 ## cLanguageVersion: stringList
+
 Версия стандарта С с которым должен компилироваться код.
 
 Если это свойство установлено, то соответсвующие флаги компилятора и линковщика будут добавлены, в зависимости от инструментов сборки.
@@ -105,6 +115,7 @@ Parameter | Type | Since | Default | Description
 # Need to translate
 
 ## combineCxxSources: bool
+
 Аналогично combineCSources, но для C++. Реелвантные ярлыки для файла "cpp" и "cpp.combine".
 
 По умолчанию: ложь
@@ -114,6 +125,7 @@ Parameter | Type | Since | Default | Description
 **Смотри так же** [combineCSources](./cppModule.md#combinecsources-bool)
 
 ## combineObjcxxSources: bool
+
 Аналогично combineCSources, но для Objective-C++. Реелвантные ярлыки для файла "objcpp" и "objcpp.combine".
 
 По умолчанию: ложь
@@ -123,6 +135,7 @@ Parameter | Type | Since | Default | Description
 **Смотри так же** [combineCSources](./cppModule.md#combinecsources-bool)
 
 ## commonCompilerFlags: stringList
+
 Список флагов, которые будут добавлены ко всем коммандам компиляции вне зависимости от языка.
 
 По умолчанию: Не определено
