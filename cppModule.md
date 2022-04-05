@@ -120,7 +120,7 @@ Parameter | Type | Since | Default | Description
 
 Это свойство было введено в Qbs 1.8.
 
-**Смотри так же** [combineCSources](combineCSources-bool)
+**Смотри так же** [combineCSources](./cppModule.md#combinecsources-bool)
 
 ## commonCompilerFlags: stringList
 Список флагов, которые будут добавлены ко всем коммандам компиляции вне зависимости от языка.
